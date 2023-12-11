@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 let input = fs
-  .readFileSync("./input.txt", "utf8")
+  .readFileSync("./input2.txt", "utf8")
   .replaceAll("\r", "")
   .replaceAll("(", "")
   .replaceAll(")", "")
@@ -16,12 +16,12 @@ let sets = input
 
 let setsArray = [];
 
-let start = "";
+let start = "AAA";
 
 for (let i = 0; i < sets.length; i++) {
-  if (i == 0) {
-    start = sets[i][0];
-  }
+ 
+
+
 
   let set = sets[i];
   let firstSet = set.shift();
